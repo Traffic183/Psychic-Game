@@ -2,14 +2,13 @@ body {
   margin: 0;
   background-image: url(https://i.imgur.com/udEtLBo.jpg);
   background-repeat: no-repeat;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #13c8f3;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Lobster', cursive;
-
+  font-family: "Roboto", sans-serif;
+  font-family: "Lobster", cursive;
 }
-  
+
 .container {
   padding-top: 3em;
 }
@@ -22,4 +21,3 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-

@@ -1,35 +1,26 @@
-//Global variables
-var letters = ["c", "d", "a", "h", "m"];
-var letterToGuess = null;
-var guessesLeft = 9;
-var guessedLetters = [];
+let letters = ["c", "d", "a", "h", "m"];
+let letterToGuess = null;
+let guessesLeft = 9;
+let guessedLetters = [];
 
+let wins = 0;
+let losses = 0;
 
-//Counter
-var wins = 0;
-var losses = 0;
-
-
-//update guesses remain
-var updateGuessesLeft = function() {
+let updateGuessesLeft = () => {
   document.querySelector("#guesses-left").innerHTML = guessesLeft;
-  };
+};
 
-
-  //make random selection
-var updateLetterToGuess = function () {
+let updateLetterToGuess = () => {
   letterToGuess = letters[Math.floor(Math.random() * letters.length)];
 };
 
+let updateGuessesSoFar = () => {
+  document.querySelector("#guesses-so-far").innerHTML = guessedLetters.join(
+    ", "
+  );
+};
 
-//keep record of guesses made 
-  var updateGuessesSoFar = function() {
-    document.querySelector("#guesses-so-far").innerHTML = guessedLetters.join(", ");
-  };
-
-
-  //reset
-var reset = function() {
+let reset = () => {
   guessesLeft = 9;
   guessedLetters = [];
   updateLetterToGuess();
@@ -40,25 +31,22 @@ var reset = function() {
 updateLetterToGuess();
 updateGuessesLeft();
 
-
-document.onkeydown = function(event) {
+document.onkeydown = (event) => {
   guessesLeft--;
-  var letter = String.fromCharCode(event.which).toLowerCase();
-
+  let letter = String.fromCharCode(event.which).toLowerCase();
 
   guessedLetters.push(letter);
-updateGuessesLeft();
-updateGuessesSoFar();
+  updateGuessesLeft();
+  updateGuessesSoFar();
 
-
-if (letter === letterToGuess) {
-  wins++;
-  document.querySelector("#wins").innerHTML = wins;
-  reset();
-}
-if (guessesLeft === 0) {
-  losses++;
-  document.querySelector("#loss").innerHTML = losses;
-  reset();
-}
+  if (letter === letterToGuess) {
+    wins++;
+    document.querySelector("#wins").innerHTML = wins;
+    reset();
+  }
+  if (guessesLeft === 0) {
+    losses++;
+    document.querySelector("#loss").innerHTML = losses;
+    reset();
+  }
 };
