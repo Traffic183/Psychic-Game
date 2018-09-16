@@ -1,23 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 body {
   margin: 0;
-  background-image: url(https://i.imgur.com/udEtLBo.jpg);
-  background-repeat: no-repeat;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  color: #13c8f3;
-  font-family: "Roboto", sans-serif;
-  font-family: "Lobster", cursive;
+  padding: 0;
+  background: url(https://i.pinimg.com/originals/67/a8/8e/67a88e5bb42d01d7f94da691a3172123.jpg);
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+ 
 }
 
-.container {
-  padding-top: 3em;
+h1, h2, h3, h4, p {
+  color: #fff;
+  text-shadow: 0px 0px 10px #ff005b,
+  0px 0px 20px #ff005b,
+  0px 0px 30px #ff005b,
+  0px 0px 40px #ff005b,
+  0px 0px 50px #ff005b,
+  0px 0px 60px #ff005b,
+  0px 0px 70px #ff005b;
 }
 
-.li {
-  border: 0;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}

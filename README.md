@@ -1,4 +1,6 @@
-# Psychic Game:  JavaScript Assignment
+# Psychic Game:  Guess What Letter The Psychic is Thinking About!
+
+# JavaScript Assignment
 
 ## How it Works
 
@@ -20,3 +22,4 @@ commiting and pushing changes to GitHub
 # Submitted Thursday, June 21st 2018 
 
 
+INCLUDE LINKS to GitHub
