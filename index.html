@@ -18,29 +18,25 @@
 
 <body>
 
-  <div class="jumbotron jumbotron-fluid bg-transparent p-3 text-center">
+  <div class="jumbotron jumbotron-fluid bg-transparent text-center pt-4 mt-4">
     <div class="container">
       <h1 class="display-4">The Psychic Game</h1>
       <h3>Guess what letter I'm thinking of...</h3>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row align-items-center text-center">
-      <div class="col-lg-3">
-        <h3>Wins: <span id="wins"></span></h3>
-        <h3 class="p-3">Losses: <span id="loss"></span></h3>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid" src="assets/images/psychic.jpg" alt="psychic">
-      </div>
-      <div class="col-lg-3">
-        <h4>Guesses Remaining: <span id="guesses-left"></span></h4>
-        <br>
-        <h4>Your Guesses so far:
-          <br>
-          <span id="guesses-so-far"></span></h4>
-      </div>
+  <div class="card bg-transparent mx-auto">
+    <div class="card-body mb-4">
+
+      <h3 class="card-text text-center">Wins: <span id="wins"></span></h3>
+      <h3 class="p-3 card-text text-center">Losses: <span id="loss"></span></h3>
+
+      <img class="card-img" src="assets/images/psychic6.png" alt="Neon Psychic Sign">
+
+      <h4 class="p-3 card-text text-center">Your Guesses so far:
+        <span id="guesses-so-far"></span></h4>
+      <h4 class="pb-3 card-text text-center">Guesses Remaining: <span id="guesses-left"></span></h4>
+
     </div>
   </div>
 
@@ -53,4 +49,5 @@
     crossorigin="anonymous"></script>
 
 </body>
+
 </html>

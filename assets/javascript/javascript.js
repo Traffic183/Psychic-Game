@@ -2,7 +2,6 @@ let letters = ["c", "d", "a", "h", "m"];
 let letterToGuess = null;
 let guessesLeft = 9;
 let guessedLetters = [];
-
 let wins = 0;
 let losses = 0;
 
@@ -31,7 +30,7 @@ let reset = () => {
 updateLetterToGuess();
 updateGuessesLeft();
 
-document.onkeydown = (event) => {
+document.onkeydown = event => {
   guessesLeft--;
   let letter = String.fromCharCode(event.which).toLowerCase();
 
